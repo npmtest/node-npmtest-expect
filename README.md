@@ -1,0 +1,128 @@
+# test coverage for  [expect (v1.20.2)](https://github.com/mjackson/expect#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-expect.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-expect) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-expect.svg)](https://travis-ci.org/npmtest/node-npmtest-expect)
+#### Write better assertions
+
+[![NPM](https://nodei.co/npm/expect.png?downloads=true)](https://www.npmjs.com/package/expect)
+
+| git-branch : | [alpha](https://github.com/npmtest/node-npmtest-expect/tree/alpha)|
+|--:|:--|
+| coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-expect/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-expect/build/coverage.html/index.html)|
+| test-report : | [![test-report](https://npmtest.github.io/node-npmtest-expect/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-expect/build/test-report.html)|
+| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-expect/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-expect/tree/gh-pages/build)|
+
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-expect/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-expect/build/coverage.html/index.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-expect/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-expect%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-expect/build/test-report.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-expect/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-expect%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-expect/build/apidoc.html)
+
+![npmPackageListing](https://npmtest.github.io/node-npmtest-expect/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmtest.github.io/node-npmtest-expect/build/screenCapture.npmPackageDependencyTree.svg)
+
+
+
+# package.json
+
+```json
+
+{
+    "author": {
+        "name": "Michael Jackson"
+    },
+    "babel": {
+        "presets": [
+            "es2015"
+        ]
+    },
+    "bugs": {
+        "url": "https://github.com/mjackson/expect/issues"
+    },
+    "dependencies": {
+        "define-properties": "~1.1.2",
+        "has": "^1.0.1",
+        "is-equal": "^1.5.1",
+        "is-regex": "^1.0.3",
+        "object-inspect": "^1.1.0",
+        "object-keys": "^1.0.9",
+        "tmatch": "^2.0.1"
+    },
+    "description": "Write better assertions",
+    "devDependencies": {
+        "babel-cli": "^6.6.5",
+        "babel-eslint": "^6.0.0",
+        "babel-loader": "^6.2.4",
+        "babel-preset-es2015": "^6.6.0",
+        "eslint": "^2.5.1",
+        "eslint-config-airbnb": "^9.0.1",
+        "eslint-plugin-import": "^1.7.0",
+        "eslint-plugin-jsx-a11y": "^1.2.0",
+        "eslint-plugin-react": "^5.1.1",
+        "gzip-size": "^3.0.0",
+        "in-publish": "^2.0.0",
+        "karma": "^0.13.22",
+        "karma-browserstack-launcher": "^1.0.0",
+        "karma-chrome-launcher": "^1.0.1",
+        "karma-mocha": "^1.0.1",
+        "karma-mocha-reporter": "^2.0.0",
+        "karma-sourcemap-loader": "^0.3.7",
+        "karma-webpack": "^1.7.0",
+        "mocha": "^2.5.3",
+        "pretty-bytes": "^3.0.1",
+        "readline-sync": "^1.4.1",
+        "rimraf": "^2.5.2",
+        "webpack": "^1.12.14"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "d458fe4c56004036bae3232416a3f6361f04f965",
+        "tarball": "https://registry.npmjs.org/expect/-/expect-1.20.2.tgz"
+    },
+    "files": [
+        "lib",
+        "umd"
+    ],
+    "gitHead": "8301ca9b742b86631c6d3df282f3a21138ac50aa",
+    "homepage": "https://github.com/mjackson/expect#readme",
+    "keywords": [
+        "expect",
+        "assert",
+        "test",
+        "spec"
+    ],
+    "license": "MIT",
+    "main": "lib",
+    "maintainers": [
+        {
+            "name": "ljharb",
+            "email": "ljharb@gmail.com"
+        },
+        {
+            "name": "mjackson",
+            "email": "mjijackson@gmail.com"
+        }
+    ],
+    "name": "expect",
+    "optionalDependencies": {},
+    "readme": "ERROR: No README data found!",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mjackson/expect.git"
+    },
+    "scripts": {
+        "build": "node ./scripts/build.js",
+        "build-lib": "rimraf lib && babel ./modules -d lib --ignore '__tests__'",
+        "build-min": "webpack -p modules/index.js umd/expect.min.js",
+        "build-umd": "webpack modules/index.js umd/expect.js",
+        "lint": "eslint modules",
+        "prepublish": "node ./scripts/build.js",
+        "release": "node ./scripts/release.js",
+        "test": "npm run lint && karma start"
+    },
+    "version": "1.20.2"
+}
+```
+
+
+
+# misc
+- this document was created with [utility2](https://github.com/kaizhu256/node-utility2)
