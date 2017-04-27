@@ -1,6 +1,6 @@
 # npmtest-expect
 
-#### test coverage for  [expect (v1.20.2)](https://github.com/mjackson/expect#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-expect.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-expect) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-expect.svg)](https://travis-ci.org/npmtest/node-npmtest-expect)
+#### basic test coverage for  [expect (v1.20.2)](https://github.com/mjackson/expect#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-expect.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-expect) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-expect.svg)](https://travis-ci.org/npmtest/node-npmtest-expect)
 
 #### Write better assertions
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-expect/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-expect/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-expect/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-expect/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-expect/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-expect/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-expect/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-expect/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-expect/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-expect/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-expect/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-expect/build/coverage.html/index.html)
 
@@ -124,7 +124,8 @@
         "release": "node ./scripts/release.js",
         "test": "npm run lint && karma start"
     },
-    "version": "1.20.2"
+    "version": "1.20.2",
+    "bin": {}
 }
 ```
 
